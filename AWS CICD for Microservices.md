@@ -999,11 +999,5 @@ In this extensive guide, we built a robust, project-based CI/CD pipeline for dep
   - Ensure to have rollback procedures in place (our CodeDeploy does auto-rollback on failure; also practice manual rollback, e.g., redeploy previous image, so team is confident in handling incidents).
   - Use this pipeline not just for deploying to prod, but also to automate deployments to staging or test environments with different triggers or branches. Perhaps have a pipeline per environment or a single pipeline with multiple deploy stages.
 
-By following this guide, you’ve implemented a state-of-the-art deployment pipeline that leverages many AWS services in concert. You have source control, continuous integration, containerization, continuous delivery with blue/green deployments, scalable infrastructure, and robust monitoring – essentially covering the full DevOps cycle on AWS. This setup can serve as a strong foundation for running microservices in production.
 
-Keep learning and iterating: AWS releases new features regularly (for example, new ECS features, Blue/Green deployments directly in CodePipeline without CodeDeploy, etc.), so stay updated. And always test changes in a safe environment.
-
-**Final Tip:** Document your specific setup and configurations for your team. Use diagrams to map out this architecture (VPC diagram showing subnets, ECS, LB, etc., and a flow diagram of CodePipeline stages). This will help onboard others and serve as reference when making changes.
-
-Congratulations on building an advanced AWS CI/CD pipeline for microservices! You have combined tools like CodePipeline, ECS, and Aurora into a cohesive system that is highly automated and resilient. With this knowledge, you can confidently deploy and manage complex cloud applications following DevOps best practices.
 
